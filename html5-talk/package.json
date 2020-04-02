@@ -1,0 +1,24 @@
+{
+  "name": "html5-presentation",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Shane Holloway <shane.holloway@ieee.org>",
+  "license": "BSD",
+
+  "dependencies": {
+    "jade": "*", "stylus": "*", "nib": "*",
+    "coffee-script": "*", "marked": "*", "highlight.js": "*",
+
+    "underscore": "~1.3.3",
+    "express": "~2.5.9",
+    "mustache": "~0.4.0",
+    "socket.io": "~0.9.13"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-livereload": "*",
+    "grunt-regarde": "*",
+    "connect": "*", "tiny-lr": "*"},
+
+  "private": true}

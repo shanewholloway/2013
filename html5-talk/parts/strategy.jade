@@ -1,0 +1,136 @@
+style.
+  .strategy li.fragment { font-size: bigger }
+  .strategy span.q { color: #f7951d }
+
+section.strategy
+  h1 Strategy for HTML5?
+  ul
+    li.fragment Why &amp; When 
+      span.q would I use it?
+    li.fragment Where 
+      span.q would I need it?
+    li.fragment How 
+      span.q can I get started?
+
+section
+  :markdown
+    ## When and Why? 
+
+    - Right now!
+      - it's easier
+      - great support
+      - mobile!
+    - What about IE8?
+      - polyfills?
+      - [Google doesn't](http://www.computerworld.com/s/article/9231316/Google_to_drop_support_for_IE8_on_Nov._15)
+      - [YouTube doesn't](http://thenextweb.com/google/2013/04/01/possible-bug-causes-youtube-to-detect-ie10-on-windows-7-and-ie8-as-no-longer-supported/)
+      - [Gmail doesn't](http://37signals.com/svn/posts/3097-developing-for-old-browsers-is-almost-a-thing-of-the-past)
+      - [QuickBooks doesn't](http://blog.qbo.intuit.com/2013/04/13/internet-explorer-8-support-for-quickbooks-online/)
+      - [BaseCamp / 37Signals doesn't](http://37signals.com/svn/posts/3097-developing-for-old-browsers-is-almost-a-thing-of-the-past)
+      - [jQuery2 doesn't](http://www.sitepoint.com/jquery-2-support-ie6-ie7-ie8/)
+
+section
+  :markdown
+    ## When and Why? 
+    ### No, for reals!
+    - Incrementally
+    - the "Open Web Platform" is in 100 pieces
+      - many features are well supported
+      - some are experimental
+      - know what you're using
+        - [CanIUse.com](http://caniuse.com)
+        - [HTML5Please.com](http://html5please.com)
+      - [detect](http://modernizr.com) and [POLYFILL!](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
+    - Balance
+
+section
+  :markdown
+    ## Where?
+    - For Markup?
+      - [html5shiv][] and use everywhere!
+      - `<section>`, `<article>` & `<nav>` away!
+    - For Web App?
+      - if mission critical, go incremental
+        - [test](http://yepnopejs.com) & use
+        - fallbacks (or not)
+      - if less critical, live on the edge!
+        - [test](http://yepnopejs.com) & error
+        > your browser does not support **AWESOMENESS**
+
+    [html5shiv]: https://github.com/aFarkas/html5shiv
+
+section
+  :markdown
+    ## How?
+    - Start small & expand
+      - Don't bite off too much!
+      - It'll get better over time
+    - Connect & Collaborate
+      - great to learn from others
+      - share what you learn
+
+section
+  :markdown
+    ## How?
+    ### Pay for it
+    - time
+      - blogs & research
+      - learning & doing
+    - money
+      - books
+      - courses
+      - classes
+    - outsource
+      - doing
+      - reviewing
+      - architecting
+
+section
+  :markdown
+    ## How?
+    ### Tooling
+    - Edit
+      - [JSHint](http://www.jshint.com)
+      - [LiveReload](http://livereload.com)
+      - [Emmet](http://emmet.io)
+
+    - Build
+      - [RequireJS](http://requirejs.org)
+      - [Grunt](http://gruntjs.com)
+
+section
+  :markdown
+    ## How?
+    ### Languages as Tools
+    - JavaScript
+      - [CoffeeScript](http://coffeescript.org)
+      - [LiveScript](http://livescript.net)
+      - [TypeScript](http://www.typescriptlang.org)
+      - [Dart](http://www.dartlang.org)
+    - CSS:
+      - [Sass](http://sass-lang.com)
+      - [Less](http://lesscss.org)
+      - [Stylus](http://learnboost.github.io/stylus/)
+    - Templating
+      - [Mustache](http://mustache.github.io) or [Handlebars](http://handlebarsjs.com)
+      - [HAML](http://haml.info) or [Jade](http://jade-lang.com)
+      - … doT.js, Hogan.js, T.js, Dust.js, EJS …
+
+section
+  :markdown
+    ## How?
+    ### Testing
+    - TDD:
+      - [Jasmine](http://pivotal.github.io/jasmine/)
+      - [Mocha](http://visionmedia.github.io/mocha/)
+      - [Karma](http://karma-runner.github.io/) test runner
+    - [PhantomJS](http://phantomjs.org)
+    - [Sauce Labs](https://saucelabs.com)
+    - [BrowserStack](http://www.browserstack.com)
+    - [TestSwarm](https://github.com/jquery/testswarm/wiki)
+
+section
+  :markdown
+    ## We could go on…
+    But really, take a look at Dimi Navrotskyy's <br/>
+    great list of [frontend dev links](https://github.com/dypsilon/frontend-dev-bookmarks).

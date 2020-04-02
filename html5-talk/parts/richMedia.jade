@@ -1,0 +1,144 @@
+section
+  :markdown
+    # Rich Media
+    
+    ## a.k.a. visual & audio stimulation
+
+    `<touch>`, `<taste>` & `<smell>`
+    _would go here, if they existed!_
+
+section
+  :markdown
+    ## Graphics: Images
+    - the standard (`"….gif"`, `"….jpg"`, - `"….png"`)
+    - `<img src=…>` support for 
+      - [`"data:text/html;base64,…"`][1] data URIs
+      - [`"….svg"` files][1] (except < IE8)
+
+    [1]: https://developer.mozilla.org/en-US/docs/data_URIs
+    [2]: http://caniuse.com/#feat=svg-img
+
+section
+  :markdown
+    ## Embedding
+    - Use [`<iframe>`][0] for embedding content
+      - nested browsing context
+      - [content security policy][4]
+      - [sandbox][3]ing and isolation
+
+    - PlugIns still use [`<object>`][1] and [`<embed>`][2] tags
+      - look at the [oembed][] standard
+      - and [embed.ly][] supporting 250+ providers
+    
+    [0]: http://developers.whatwg.org/the-iframe-element.html
+    [1]: http://developers.whatwg.org/the-iframe-element.html#the-object-element
+    [2]: http://developers.whatwg.org/the-iframe-element.html#the-embed-element
+    [3]: http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/
+    [4]: http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+    [oembed]: http://oembed.com/
+    [embed.ly]: http://embed.ly/
+
+section
+  :markdown
+    ## Graphics: Vectors
+    - [SVG Spec][spec]
+      - W3C Recommendation in 2001, 2003, 2008, 2011
+      - All major browsers after IE8
+    - in [`<img src=…>`][tag] elements
+    - [inline `<svg>`][svg] in HTML5
+    - in [CSS backgrounds][bg]
+
+    [spec]: http://www.w3.org/TR/SVG11/
+    [tag]: http://caniuse.com/#feat=svg-img
+    [svg]: http://caniuse.com/#feat=svg-html5
+    [bg]: http://caniuse.com/#feat=svg-css
+
+section
+  h3 SVG Example
+  iframe.demo(src='demo/d3/collision.html', width=600, height=450)
+  a(href='http://bl.ocks.org/mbostock/3231298') D3's Collision Detection
+
+section
+  :markdown
+    ## Graphics: 2D Canvas
+
+    - [`<canvas>` element][0]
+      - provides a fixed size drawing surface
+      - rendering APIs
+      - stateful context
+      - [All major browsers after IE8][3]
+
+    - [2D Rendering Context][1]
+      - paths, rectangles, images and text
+      - strokes & fills: colors, gradients, images, patterns
+      - transforms: translate, scale, rotate, matrix
+      - image generation with [`toDataURL()`][2]
+
+    [0]: http://developers.whatwg.org/the-canvas-element.html
+    [1]: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
+    [2]: http://developers.whatwg.org/the-canvas-element.html#dom-canvas-todataurl
+    [3]: http://caniuse.com/#feat=canvas
+
+section
+  h3 2D Canvas Example
+  iframe.demo(src='demo/d3/heatmap.html', width=600, height=450)
+  a(href='http://bl.ocks.org/mbostock/3074470') D3's Canvas Heatmap
+
+section
+  :markdown
+    ## Graphics: 3D WebGL
+    - [WebGL][] is based on [OpenGL ES 2.0][]
+      - support [stats][]: 72% on desktop, 9% on mobile
+    - [3D WebGL Rendering Context][0]
+      - buffers — generic, render, frame, depth and stencil
+      - typed arrays, variables & textures
+      - Vertex Shaders
+      - Fragment Shaders
+      - linking variables, textures and shader programs
+
+    [WebGL]: http://www.khronos.org/webgl/
+    [OpenGL ES 2.0]: http://www.khronos.org/opengles/2_X
+    [stats]: http://webglstats.com/
+    [0]: http://www.nihilogic.dk/labs/webgl_cheat_sheet/WebGL_Cheat_Sheet.htm
+
+section
+  h3 3D WebGL Example
+
+  iframe.demo(src='demo/webgl-lesson14/', width=600, height=450)
+
+section
+  :markdown
+    ## Video and Audio
+    a nightmare of [politics, formats & proprietary codecs][0]
+
+    - [`<video>`][1]
+      - MP4: _IE, Chrome, Safari, iOS, Android_
+      - WebM: _Chrome, Firefox, Opera_
+    - [`<audio>`][2]
+      - AAC: _IE, Chrome, Safari, iOS, Android_
+      - MP3: _IE, Chrome, Safari, iOS, Android_
+      - Vorbis: _Chrome, Firefox, Opera_
+    - [`<source>`][3] for alternate formats
+      - use with media queries
+    - [`<track>`][4] for timed text or data feeds
+        
+    [0]: http://www.longtailvideo.com/html5/
+    [1]: http://caniuse.com/video
+    [2]: http://caniuse.com/audio
+    [3]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source
+    [4]: http://www.longtailvideo.com/blog/27621/whats-new-in-html5-the-track-element/
+
+section
+  h3 Video Example
+
+  pre
+    code.
+      &lt;video controls&gt;
+        &lt;source src="demo/video/birds.m4v" type="video/mp4" /&gt;
+        &lt;source src="demo/video/birds.ogv" type="video/ogg" /&gt;
+      &lt;/video&gt;
+
+  video(controls)
+    source(src="demo/video/birds.m4v", type="video/mp4")
+    source(src="demo/video/birds.ogv", type="video/ogg")
+

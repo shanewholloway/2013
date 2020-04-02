@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>HTML5 Overview</title>
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/print/pdf.css" media="print">
+    <link rel="stylesheet" href="css/fonts/fonts.css">
+    <link rel="stylesheet" href="css/night.css" id="theme">
+    <link rel="stylesheet" href="css/zenburn.css">
+    <style>
+      iframe.demo {
+        display: block;
+        margin: 0 auto;
+        border: 0;
+        background: white;
+      }
+      
+    </style>
+    <!--[if lt IE 9]
+    <script src="js/html5shiv.js"></script>
+    -->
+    <script src="js/classList.js"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <header>
+            <h1>HTML5 Platform</h1>
+            <h2>a 10K Foot View</h2>
+          </header>
+          <aside class="notes"></aside>
+        </section>
+        <section>
+          <section>
+            <h2>the HTML5 Platform</h2>
+            <h3>aka "Open Web Platform"</h3>
+            <ul>
+              <li>HTML5 Spec</li>
+              <li>Markup</li>
+              <li>Rich Media</li>
+              <li>Presentation</li>
+              <li>JavaScript APIs</li>
+              <li>Web Applications</li>
+            </ul>
+            <aside class="notes"></aside>
+          </section>
+          <section>
+            <h2>an HTML5 Strategy</h2>
+            <ul>
+              <li>When, Where &amp; Why</li>
+              <li>How</li>
+              <li>Resources</li>
+            </ul>
+            <aside class="notes"></aside>
+          </section>
+          <section><h2><a href="https://shaneholloway.typeform.com/report/uGgeOg/GFmD">Our Survey</a></h2>
+<p>23 reponses. <a href="http://goo.gl/YfiaV">goo.gl/YfiaV</a></p>
+<ul>
+<li>Q1: The Overview<ul>
+<li>Graphics (70%), APIs (48%), Realtime (48%)</li>
+</ul>
+</li>
+<li>Q2: In-Depth<ul>
+<li>RESTful (43%), new elements (43%), WebSockets (39%)</li>
+</ul>
+</li>
+<li>Q3: Dead Horse<ul>
+<li>new elements (30%), video &amp; audio (22%)</li>
+</ul>
+</li>
+<li>Q4: Applied (65%) vs Overview (30%)<ul>
+<li>I got both slots, so you get both!</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Q5: HTML5 platform is…</h2>
+<ul>
+<li>(70%) what I need to learn for tomorrow</li>
+<li>(48%) steadily becoming the present reality</li>
+<li>(35%) the platform of the future</li>
+</ul>
+<p><br/>
+<br/>
+View all at <a href="http://goo.gl/YfiaV">goo.gl/YfiaV</a></p>
+
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>What is HTML5?</h1>
+            <ul>
+              <li>a <a href="http://www.w3.org/TR/html5/">W3C</a> and <a href="http://developers.whatwg.org">WHATWG</a> specification</li>
+              <li>a follow-on to HTML4 and XHTML1</li>
+              <li>a markup syntax</li>
+              <li class="fragment">current behaviors, documented</li>
+              <li class="fragment">a standardized JavaScript API</li>
+              <li class="fragment">a simple DOCTYPE</li>
+              <li class="fragment">a backlash against…
+                <ul>
+                  <li class="fragment">XML &amp; SGML?</li>
+                  <li class="fragment">Flash and Plugins?</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section><h2>(Forgiving) Parsing Algorithm</h2>
+<ul>
+<li>inline support for SVG and MathML</li>
+<li>specified parse error handling<ul>
+<li>e.g. <code>&lt;b&gt;&lt;i&gt;some text&lt;/b&gt;&lt;/i&gt;</code></li>
+</ul>
+</li>
+<li>all compliant browsers now <b>parse identically</b></li>
+<li>=&gt; interoperable, compatible document trees</li>
+</ul>
+
+          </section>
+          <section><h2>Standardized DOM Parse Tree</h2>
+<ul>
+<li><p><code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> are optional!</p>
+</li>
+<li><p>“smart” auto-closing tags</p>
+<ul>
+<li><code>&lt;h1&gt;</code>…, <code>&lt;p&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code> </li>
+</ul>
+</li>
+<li><p><code>&lt;table&gt;</code> implies <code>&lt;tbody&gt;</code></p>
+<ul>
+<li><code>&lt;thead&gt;</code>, <code>&lt;tfoot&gt;</code> auto-close</li>
+<li><code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code> and <code>&lt;td&gt;</code> auto-close</li>
+</ul>
+</li>
+<li><p><strong>use with caution</strong> — <em>like operator precidence</em></p>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Web Application APIs</h2>
+<ul>
+<li>DOM, CSSOM, Timers and Events</li>
+<li>History &amp; Navigation</li>
+<li>Storage &amp; Offline support</li>
+<li>RESTful &amp; Realtime Communications</li>
+<li>Focus, Editing, and Drag &amp; Drop</li>
+</ul>
+
+          </section>
+          <section><h2>New Markup</h2>
+<ul>
+<li>new tags </li>
+<li>new attributes</li>
+<li>… <em><strong>up next</strong></em></li>
+<li>&amp; rich media, <em>a bit later</em></li>
+</ul>
+
+          </section>
+          <section><h2>to get started…</h2>
+<pre><code class="lang-html"><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">h1</span>&gt;</span>Look, HTML5!</code></pre>
+<p>yep, that&#39;s all you need</p>
+
+            <iframe style="background: white; margin: 10px; padding: 10px" src="data:text/html;base64,PCFET0NUWVBFIGh0bWw+CjxoMT5Mb29rLCBIVE1MNSEK"></iframe>
+          </section>
+          <section><h2>to get started… in practice</h2>
+<pre><code class="lang-html"><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">'utf-8'</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">title</span>&gt;</span>HTML5 in Practice
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">h1</span>&gt;</span>Look, HTML5!</code></pre>
+<p>because <code>charset</code> and <code>title</code> are important.</p>
+<p>And yes, you may close your tags if you want.</p>
+<small>(You can even write so it parses as HTML5 <b>and</b> XHTML2…)</small>
+          </section>
+        </section>
+        <section>
+          <section><h1>HTML5 Markup</h1>
+<p><em><a href="https://rawgithub.com/whatwg/html-differences/master/Overview.html#new-elements">summary of HTML5 differences</a></em></p>
+<ul>
+<li>New &amp; Changed Elements &amp; Attributes<ul>
+<li>sectioning &amp; structural</li>
+<li>improved semantics</li>
+<li>enhanced forms</li>
+</ul>
+</li>
+<li>Obsolete Elements and Attributes<ul>
+<li>CSS instead of presentational markup</li>
+<li>eliminate redundant &amp; harmful elements</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Structure &amp; Sectioning</h2>
+<ul>
+<li><a href="http://html5doctor.com/the-main-element/"><code>&lt;main&gt;</code></a> to indicate the “real” content</li>
+<li><a href="http://html5doctor.com/the-header-element/"><code>&lt;header&gt;</code></a> for introducting sections</li>
+<li><a href="http://html5doctor.com/the-footer-element-update/"><code>&lt;footer&gt;</code></a> for wrapping up sections</li>
+<li><a href="http://html5doctor.com/the-article-element/"><code>&lt;article&gt;</code></a> for stand alone units of content</li>
+<li><a href="http://html5doctor.com/the-section-element/"><code>&lt;section&gt;</code></a> for grouping of articles</li>
+<li><a href="http://html5doctor.com/aside-revisited/"><code>&lt;aside&gt;</code></a> for tangents and sidetracks</li>
+<li><a href="http://html5doctor.com/nav-element/"><code>&lt;nav&gt;</code></a> for collecting links</li>
+</ul>
+
+          </section>
+          <section><h2>Structured Document</h2>
+<pre><code class="lang-html"><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">'utf-8'</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">title</span>&gt;</span>HTML5 Strutured
+<span class="tag">&lt;<span class="title">body</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">header</span>&gt;</span> … <span class="tag">&lt;<span class="title">nav</span>&gt;</span> … <span class="tag">&lt;/<span class="title">nav</span>&gt;</span> … <span class="tag">&lt;/<span class="title">header</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">aside</span>&gt;</span>…<span class="tag">&lt;/<span class="title">aside</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">main</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">section</span>&gt;</span> … <span class="tag">&lt;<span class="title">aside</span>&gt;</span> … <span class="tag">&lt;/<span class="title">aside</span>&gt;</span> … <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">article</span>&gt;</span> … <span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">section</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">article</span>&gt;</span> … <span class="tag">&lt;<span class="title">aside</span>&gt;</span> … <span class="tag">&lt;/<span class="title">aside</span>&gt;</span> <span class="tag">&lt;/<span class="title">article</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+    <span class="tag">&lt;/<span class="title">main</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">footer</span>&gt;</span> … <span class="tag">&lt;<span class="title">nav</span>&gt;</span> … <span class="tag">&lt;/<span class="title">nav</span>&gt;</span> … <span class="tag">&lt;/<span class="title">footer</span>&gt;</span></code></pre>
+
+          </section>
+          <section><h2>Figure Semantics</h2>
+<ul>
+<li><a href="http://html5doctor.com/the-figure-figcaption-elements/"><code>&lt;figure&gt;</code></a> to wrap one or more media items</li>
+<li><a href="http://html5doctor.com/the-figure-figcaption-elements/"><code>&lt;figcaption&gt;</code></a> to describe what&#39;s in the figure</li>
+</ul>
+
+          </section>
+          <section><h2>Other Elements</h2>
+<ul>
+<li><code>&lt;time&gt;</code>, <code>&lt;wbr&gt;</code></li>
+<li>behavior: <code>&lt;details&gt;</code>, <code>&lt;summary&gt;</code></li>
+<li>media: <code>&lt;canvas&gt;</code> <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;track&gt;</code>, <code>&lt;source&gt;</code></li>
+<li>language: <code>&lt;bdi&gt;</code>, <code>&lt;ruby&gt;</code>, <code>&lt;rt&gt;</code>, <code>&lt;rp&gt;</code></li>
+<li>redefined: <code>&lt;b&gt;</code>, <code>&lt;s&gt;</code>, <code>&lt;u&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;cite&gt;</code>, <code>&lt;dl&gt;</code>, <code>&lt;hr&gt;</code></li>
+<li>redefined: <code>&lt;address&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;small&gt;</code>, <code>&lt;strong&gt;</code></li>
+</ul>
+
+          </section>
+          <section><h2>Enhanced Forms</h2>
+<ul>
+<li><p>behavior</p>
+<ul>
+<li>placeholder</li>
+<li>autofocus</li>
+<li>readonly</li>
+<li>validation</li>
+</ul>
+</li>
+<li><p><code>&lt;input type=…&gt;</code> </p>
+<ul>
+<li>email, url, tel</li>
+<li>search</li>
+<li><p>number, range</p>
+</li>
+<li><p><em>warning: fragmented browser support</em></p>
+</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>New Forms Elements</h2>
+<ul>
+<li><code>&lt;datalist&gt;</code></li>
+<li><code>&lt;output&gt;</code></li>
+<li><code>&lt;progress&gt;</code></li>
+<li><code>&lt;meter&gt;</code></li>
+<li><code>&lt;keygen&gt;</code></li>
+</ul>
+
+          </section>
+        </section>
+        <section>
+          <section><h1>Rich Media</h1>
+<h2>a.k.a. visual &amp; audio stimulation</h2>
+<p><code>&lt;touch&gt;</code>, <code>&lt;taste&gt;</code> &amp; <code>&lt;smell&gt;</code>
+<em>would go here, if they existed!</em></p>
+
+          </section>
+          <section><h2>Graphics: Images</h2>
+<ul>
+<li>the standard (<code>&quot;….gif&quot;</code>, <code>&quot;….jpg&quot;</code>, - <code>&quot;….png&quot;</code>)</li>
+<li><code>&lt;img src=…&gt;</code> support for <ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/data_URIs"><code>&quot;data:text/html;base64,…&quot;</code></a> data URIs</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/data_URIs"><code>&quot;….svg&quot;</code> files</a> (except &lt; IE8)</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Embedding</h2>
+<ul>
+<li><p>Use <a href="http://developers.whatwg.org/the-iframe-element.html"><code>&lt;iframe&gt;</code></a> for embedding content</p>
+<ul>
+<li>nested browsing context</li>
+<li><a href="http://www.html5rocks.com/en/tutorials/security/content-security-policy/">content security policy</a></li>
+<li><a href="http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/">sandbox</a>ing and isolation</li>
+</ul>
+</li>
+<li><p>PlugIns still use <a href="http://developers.whatwg.org/the-iframe-element.html#the-object-element"><code>&lt;object&gt;</code></a> and <a href="http://developers.whatwg.org/the-iframe-element.html#the-embed-element"><code>&lt;embed&gt;</code></a> tags</p>
+<ul>
+<li>look at the <a href="http://oembed.com/">oembed</a> standard</li>
+<li>and <a href="http://embed.ly/">embed.ly</a> supporting 250+ providers</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Graphics: Vectors</h2>
+<ul>
+<li><a href="http://www.w3.org/TR/SVG11/">SVG Spec</a><ul>
+<li>W3C Recommendation in 2001, 2003, 2008, 2011</li>
+<li>All major browsers after IE8</li>
+</ul>
+</li>
+<li>in <a href="http://caniuse.com/#feat=svg-img"><code>&lt;img src=…&gt;</code></a> elements</li>
+<li><a href="http://caniuse.com/#feat=svg-html5">inline <code>&lt;svg&gt;</code></a> in HTML5</li>
+<li>in <a href="http://caniuse.com/#feat=svg-css">CSS backgrounds</a></li>
+</ul>
+
+          </section>
+          <section>
+            <h3>SVG Example</h3>
+            <iframe src="demo/d3/collision.html" width="600" height="450" class="demo"></iframe><a href="http://bl.ocks.org/mbostock/3231298">D3's Collision Detection</a>
+          </section>
+          <section><h2>Graphics: 2D Canvas</h2>
+<ul>
+<li><p><a href="http://developers.whatwg.org/the-canvas-element.html"><code>&lt;canvas&gt;</code> element</a></p>
+<ul>
+<li>provides a fixed size drawing surface</li>
+<li>rendering APIs</li>
+<li>stateful context</li>
+<li><a href="http://caniuse.com/#feat=canvas">All major browsers after IE8</a></li>
+</ul>
+</li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">2D Rendering Context</a></p>
+<ul>
+<li>paths, rectangles, images and text</li>
+<li>strokes &amp; fills: colors, gradients, images, patterns</li>
+<li>transforms: translate, scale, rotate, matrix</li>
+<li>image generation with <a href="http://developers.whatwg.org/the-canvas-element.html#dom-canvas-todataurl"><code>toDataURL()</code></a></li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section>
+            <h3>2D Canvas Example</h3>
+            <iframe src="demo/d3/heatmap.html" width="600" height="450" class="demo"></iframe><a href="http://bl.ocks.org/mbostock/3074470">D3's Canvas Heatmap</a>
+          </section>
+          <section><h2>Graphics: 3D WebGL</h2>
+<ul>
+<li><a href="http://www.khronos.org/webgl/">WebGL</a> is based on <a href="http://www.khronos.org/opengles/2_X">OpenGL ES 2.0</a><ul>
+<li>support <a href="http://webglstats.com/">stats</a>: 72% on desktop, 9% on mobile</li>
+</ul>
+</li>
+<li><a href="http://www.nihilogic.dk/labs/webgl_cheat_sheet/WebGL_Cheat_Sheet.htm">3D WebGL Rendering Context</a><ul>
+<li>buffers — generic, render, frame, depth and stencil</li>
+<li>typed arrays, variables &amp; textures</li>
+<li>Vertex Shaders</li>
+<li>Fragment Shaders</li>
+<li>linking variables, textures and shader programs</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section>
+            <h3>3D WebGL Example</h3>
+            <iframe src="demo/webgl-lesson14/" width="600" height="450" class="demo"></iframe>
+          </section>
+          <section><h2>Video and Audio</h2>
+<p>a nightmare of <a href="http://www.longtailvideo.com/html5/">politics, formats &amp; proprietary codecs</a></p>
+<ul>
+<li><a href="http://caniuse.com/video"><code>&lt;video&gt;</code></a><ul>
+<li>MP4: <em>IE, Chrome, Safari, iOS, Android</em></li>
+<li>WebM: <em>Chrome, Firefox, Opera</em></li>
+</ul>
+</li>
+<li><a href="http://caniuse.com/audio"><code>&lt;audio&gt;</code></a><ul>
+<li>AAC: <em>IE, Chrome, Safari, iOS, Android</em></li>
+<li>MP3: <em>IE, Chrome, Safari, iOS, Android</em></li>
+<li>Vorbis: <em>Chrome, Firefox, Opera</em></li>
+</ul>
+</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/source"><code>&lt;source&gt;</code></a> for alternate formats<ul>
+<li>use with media queries</li>
+</ul>
+</li>
+<li><a href="http://www.longtailvideo.com/blog/27621/whats-new-in-html5-the-track-element/"><code>&lt;track&gt;</code></a> for timed text or data feeds</li>
+</ul>
+
+          </section>
+          <section>
+            <h3>Video Example</h3>
+            <pre><code>
+                &lt;video controls&gt;
+                  &lt;source src="demo/video/birds.m4v" type="video/mp4" /&gt;
+                  &lt;source src="demo/video/birds.ogv" type="video/ogg" /&gt;
+                &lt;/video&gt;
+                </code></pre>
+            <video controls>
+              <source src="demo/video/birds.m4v" type="video/mp4">
+              <source src="demo/video/birds.ogv" type="video/ogg">
+            </video>
+          </section>
+        </section>
+        <section>
+          <section><h1>Presentation</h1>
+<ul>
+<li>CSS 1, 2.1, 3 <em>(and 4?)</em><ul>
+<li>for both HTML &amp; SVG</li>
+</ul>
+</li>
+<li>inline <code>style=&quot;…&quot;</code> attributes</li>
+<li>inline <code>&lt;style&gt;</code> tags</li>
+<li>linked stylesheets</li>
+<li>media queries, inside and out</li>
+</ul>
+
+          </section>
+          <section><h2>Media Queries</h2>
+<ul>
+<li><a href="http://blog.teamtreehouse.com/beginners-guide-to-responsive-web-design">Responsive Web Design</a><ul>
+<li>deliver both desktop &amp; mobile</li>
+</ul>
+</li>
+<li><a href="http://jakearchibald.com/2013/progressive-enhancement-still-important/">Progressive enhancement is still important</a></li>
+<li>Stylesheets for <a href="http://coding.smashingmagazine.com/2013/03/08/tips-tricks-print-style-sheets/">printing</a> and <a href="http://davidwalsh.name/css-page-breaks">page-breaks</a></li>
+</ul>
+
+          </section>
+          <section><h2>Backgrounds</h2>
+<ul>
+<li><a href="http://www.css3files.com/color/">colors</a>, images, <a href="http://www.css3files.com/gradient/">linear &amp; radial gradients</a></li>
+<li><a href="http://www.css3files.com/background/#backgroundsize">sizing</a>, <a href="http://www.css3files.com/background/#backgroundorigin">positioning</a>, <a href="http://www.css3files.com/background/#backgroundclip">clipping</a></li>
+<li>layering <a href="http://dev.opera.com/articles/view/css3-border-background-boxshadow/#multiple-background">multiple backgrounds</a></li>
+</ul>
+
+          </section>
+          <multiple></multiple>
+          <section><h2>Boxes</h2>
+<ul>
+<li><a href="http://www.css3files.com/color/">colors</a> and <a href="http://www.css3files.com/color/#opacity">opacity</a></li>
+<li><a href="http://css-tricks.com/box-sizing/"><code>box-sizing</code></a></li>
+<li><a href="http://www.css3files.com/shadow/"><code>box-shadow</code></a></li>
+<li><a href="http://www.css3files.com/border/#borderradius"><code>border-radius</code></a> and <a href="http://www.css3files.com/border/#borderimage"><code>border-image</code></a></li>
+</ul>
+
+          </section>
+          <section><h2>Text</h2>
+<ul>
+<li><a href="http://www.paulirish.com/2009/bulletproof-font-face-implementation-syntax/"><code>@font-face {…}</code></a></li>
+<li><a href="http://www.css3files.com/text/#textoverflow"><code>overflow</code></a> &amp; <a href="http://www.css3files.com/text/#wordwrap"><code>word-wrap</code></a></li>
+<li><a href="http://www.css3files.com/shadow/#textshadow"><code>text-shadow</code></a></li>
+</ul>
+
+          </section>
+          <section><h2>Transformations</h2>
+<ul>
+<li><a href="http://www.css3files.com/transform/#transformorigin"><code>transform-origin</code></a></li>
+<li><a href="http://www.css3files.com/transform/#translate"><code>translate</code></a>, <code>translateX()</code>, <code>translateY()</code></li>
+<li><a href="http://www.css3files.com/transform/#scale"><code>scale()</code></a>, <code>scaleX()</code>, <code>scaleY()</code></li>
+<li><a href="http://www.css3files.com/transform/#rotate"><code>rotate()</code></a>, <code>rotateX()</code>, <code>rotateY()</code></li>
+<li><a href="http://www.css3files.com/transform/#skew"><code>skew()</code></a>, <code>skewX()</code>, <code>skewY()</code></li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function"><code>matrix()</code></a></p>
+</li>
+<li><p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">3D Transformations</a></p>
+<ul>
+<li><code>perspective()</code>, <code>matrix3d()</code></li>
+<li><code>translate3d()</code>, <code>scale3d()</code>, <code>rotate3d()</code></li>
+<li><code>translateZ()</code>, <code>scaleZ()</code>, <code>rotateZ()</code></li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Animations</h2>
+<ul>
+<li>property <a href="http://www.css3files.com/transition/">transitions</a><ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function?redirectlocale=en-US&amp;redirectslug=CSS%2Ftransition-timing-function">timing functions</a></li>
+<li>e.g. fade out by changing <code>opacity</code> over time</li>
+</ul>
+</li>
+<li><a href="http://www.css3files.com/animation/">animation</a> &amp; <a href="http://www.css3files.com/animation/#val_gen2">keyframes</a><ul>
+<li>basically <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation">keyframable transitions</a></li>
+</ul>
+</li>
+<li>and a little JavaScript<ul>
+<li><a href="http://caniuse.com/#feat=classlist"><code>elem.classList</code></a> manipulation</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/window.requestAnimationFrame"><code>window.requestAnimationFrame()</code></a></li>
+<li><a href="https://github.com/sole/tween.js/">tweening</a> libraries</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+        </section>
+        <section>
+          <section><h1>JavaScript APIs</h1>
+<ul>
+<li>DOM &amp; CSSOM</li>
+<li>JSON, HTML &amp; XML Parsing</li>
+<li>History &amp; Navigation</li>
+<li>Storage &amp; Offline</li>
+<li>Canvas &amp; rendering</li>
+<li>Communications<ul>
+<li>Security</li>
+<li>Cross-document</li>
+<li>RESTful &amp; JSON</li>
+<li>Realtime</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Document Object Model</h2>
+<h3>a.k.a. <em>the DOM</em></h3>
+<ul>
+<li>for HTML, SVG &amp; CSS</li>
+<li>dataset</li>
+<li>classList</li>
+<li>events</li>
+</ul>
+
+          </section>
+          <section><h2>Powerful APIs</h2>
+<ul>
+<li>History API</li>
+<li>Geolocation</li>
+<li>Drag and Drop</li>
+</ul>
+
+          </section>
+          <section><h2>Storage, client-side</h2>
+<ul>
+<li>old: cookies</li>
+<li><a href="http://html5demos.com/storage">Web Storage</a>: local &amp; session<ul>
+<li>simple and <a href="http://caniuse.com/#feat=namevalue-storage">well supported</a></li>
+</ul>
+</li>
+<li><a href="http://caniuse.com/#feat=indexeddb">IndexedDB</a><ul>
+<li>and <a href="http://caniuse.com/#feat=websql">WebSQL</a> based <a href="https://github.com/axemclion/IndexedDBShim">polyfill</a></li>
+<li>more complex</li>
+</ul>
+</li>
+<li><a href="http://caniuse.com/#search=filesystem">FileSystem</a> API<ul>
+<li>not well supported</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Canvas APIs</h2>
+<ul>
+<li><code>.fill()</code> and <code>.stroke()</code></li>
+<li><code>.beginPath()</code><ul>
+<li><code>.lineTo()</code> <code>.arcTo()</code></li>
+<li><code>.closePath()</code></li>
+</ul>
+</li>
+<li><code>.drawImage()</code></li>
+<li><code>.transform()</code> <code>.rotate()</code> <code>.scale()</code></li>
+<li><code>.clip()</code></li>
+</ul>
+
+          </section>
+          <section><h2>Video &amp; Audio</h2>
+<ul>
+<li>methods<ul>
+<li><code>.load()</code></li>
+<li><code>.pause()</code></li>
+<li><code>.play()</code></li>
+<li><code>.canPlayType()</code></li>
+</ul>
+</li>
+<li>events<ul>
+<li><code>loaded</code>, <code>playing</code>, <code>ended</code>, …</li>
+<li><code>progress</code>, <code>timeupdate</code>, …</li>
+<li><code>seeking</code>, <code>pause</code>, <code>volumechange</code>, …</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Document Communcations</h2>
+<ul>
+<li>postMessage<ul>
+<li><code>&lt;iframe&gt;</code></li>
+<li><code>window.open()</code></li>
+<li><a href="http://www.html5rocks.com/en/tutorials/workers/basics/">web workers</a></li>
+</ul>
+</li>
+<li><a href="http://html5demos.com/storage-events">Storage Events</a></li>
+</ul>
+
+          </section>
+          <section><h2>RESTful Communcations</h2>
+<p>(REST: Representational State Transfer)
+- AJAX, <a href="http://www.html5rocks.com/en/tutorials/file/xhr2/">XHR2</a>, JSON and <a href="http://en.wikipedia.org/wiki/JSONP">JSONP</a>
+- Security, <a href="http://en.wikipedia.org/wiki/Same_origin_policy">same-origin policy</a> and <a href="http://www.html5rocks.com/en/tutorials/cors/">CORS</a>
+- <a href="https://developer.mozilla.org/en-US/docs/Web/API/DOMParser">DOMParser</a> for parsing XML or HTML
+  - <a href="https://developer.mozilla.org/en-US/docs/XMLSerializer">XMLSerializer</a> to convert back to XHTML
+  - <a href="https://developer.mozilla.org/en-US/docs/Using_XPath">XPath</a> for selections and filtering</p>
+<p><br/>
+(More in our hands-on session)</p>
+
+          </section>
+          <section><h2>Realtime Communcations</h2>
+<ul>
+<li><a href="http://tech.ebuddy.com/2013/06/25/server-sent-events-in-action/">Server-Sent Events in Action</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/WebSockets">Web Sockets</a> &amp; fallbacks<ul>
+<li><a href="http://sockjs.org">SockJS</a> polyfill</li>
+<li><a href="http://socket.io/">Socket.io</a> realtime</li>
+</ul>
+</li>
+</ul>
+<p><br/>
+(More in our hands-on session)</p>
+
+          </section>
+        </section>
+        <section>
+          <style>
+            .strategy li.fragment { font-size: bigger }
+            .strategy span.q { color: #f7951d }
+            
+          </style>
+          <section class="strategy">
+            <h1>Strategy for HTML5?</h1>
+            <ul>
+              <li class="fragment">Why &amp; When <span class="q">would I use it?</span></li>
+              <li class="fragment">Where <span class="q">would I need it?</span></li>
+              <li class="fragment">How <span class="q">can I get started?</span></li>
+            </ul>
+          </section>
+          <section><h2>When and Why?</h2>
+<ul>
+<li>Right now!<ul>
+<li>it&#39;s easier</li>
+<li>great support</li>
+<li>mobile!</li>
+</ul>
+</li>
+<li>What about IE8?<ul>
+<li>polyfills?</li>
+<li><a href="http://www.computerworld.com/s/article/9231316/Google_to_drop_support_for_IE8_on_Nov._15">Google doesn&#39;t</a></li>
+<li><a href="http://thenextweb.com/google/2013/04/01/possible-bug-causes-youtube-to-detect-ie10-on-windows-7-and-ie8-as-no-longer-supported/">YouTube doesn&#39;t</a></li>
+<li><a href="http://37signals.com/svn/posts/3097-developing-for-old-browsers-is-almost-a-thing-of-the-past">Gmail doesn&#39;t</a></li>
+<li><a href="http://blog.qbo.intuit.com/2013/04/13/internet-explorer-8-support-for-quickbooks-online/">QuickBooks doesn&#39;t</a></li>
+<li><a href="http://37signals.com/svn/posts/3097-developing-for-old-browsers-is-almost-a-thing-of-the-past">BaseCamp / 37Signals doesn&#39;t</a></li>
+<li><a href="http://www.sitepoint.com/jquery-2-support-ie6-ie7-ie8/">jQuery2 doesn&#39;t</a></li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>When and Why?</h2>
+<h3>No, for reals!</h3>
+<ul>
+<li>Incrementally</li>
+<li>the “Open Web Platform” is in 100 pieces<ul>
+<li>many features are well supported</li>
+<li>some are experimental</li>
+<li>know what you&#39;re using<ul>
+<li><a href="http://caniuse.com">CanIUse.com</a></li>
+<li><a href="http://html5please.com">HTML5Please.com</a></li>
+</ul>
+</li>
+<li><a href="http://modernizr.com">detect</a> and <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills">POLYFILL!</a></li>
+</ul>
+</li>
+<li>Balance</li>
+</ul>
+
+          </section>
+          <section><h2>Where?</h2>
+<ul>
+<li>For Markup?<ul>
+<li><a href="https://github.com/aFarkas/html5shiv">html5shiv</a> and use everywhere!</li>
+<li><code>&lt;section&gt;</code>, <code>&lt;article&gt;</code> &amp; <code>&lt;nav&gt;</code> away!</li>
+</ul>
+</li>
+<li>For Web App?<ul>
+<li>if mission critical, go incremental<ul>
+<li><a href="http://yepnopejs.com">test</a> &amp; use</li>
+<li>fallbacks (or not)</li>
+</ul>
+</li>
+<li>if less critical, live on the edge!<ul>
+<li><a href="http://yepnopejs.com">test</a> &amp; error<blockquote>
+<p>your browser does not support <strong>AWESOMENESS</strong></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>How?</h2>
+<ul>
+<li>Start small &amp; expand<ul>
+<li>Don&#39;t bite off too much!</li>
+<li>It&#39;ll get better over time</li>
+</ul>
+</li>
+<li>Connect &amp; Collaborate<ul>
+<li>great to learn from others</li>
+<li>share what you learn</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>How?</h2>
+<h3>Pay for it</h3>
+<ul>
+<li>time<ul>
+<li>blogs &amp; research</li>
+<li>learning &amp; doing</li>
+</ul>
+</li>
+<li>money<ul>
+<li>books</li>
+<li>courses</li>
+<li>classes</li>
+</ul>
+</li>
+<li>outsource<ul>
+<li>doing</li>
+<li>reviewing</li>
+<li>architecting</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>How?</h2>
+<h3>Tooling</h3>
+<ul>
+<li><p>Edit</p>
+<ul>
+<li><a href="http://www.jshint.com">JSHint</a></li>
+<li><a href="http://livereload.com">LiveReload</a></li>
+<li><a href="http://emmet.io">Emmet</a></li>
+</ul>
+</li>
+<li><p>Build</p>
+<ul>
+<li><a href="http://requirejs.org">RequireJS</a></li>
+<li><a href="http://gruntjs.com">Grunt</a></li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>How?</h2>
+<h3>Languages as Tools</h3>
+<ul>
+<li>JavaScript<ul>
+<li><a href="http://coffeescript.org">CoffeeScript</a></li>
+<li><a href="http://livescript.net">LiveScript</a></li>
+<li><a href="http://www.typescriptlang.org">TypeScript</a></li>
+<li><a href="http://www.dartlang.org">Dart</a></li>
+</ul>
+</li>
+<li>CSS:<ul>
+<li><a href="http://sass-lang.com">Sass</a></li>
+<li><a href="http://lesscss.org">Less</a></li>
+<li><a href="http://learnboost.github.io/stylus/">Stylus</a></li>
+</ul>
+</li>
+<li>Templating<ul>
+<li><a href="http://mustache.github.io">Mustache</a> or <a href="http://handlebarsjs.com">Handlebars</a></li>
+<li><a href="http://haml.info">HAML</a> or <a href="http://jade-lang.com">Jade</a></li>
+<li>… doT.js, Hogan.js, T.js, Dust.js, EJS …</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>How?</h2>
+<h3>Testing</h3>
+<ul>
+<li>TDD:<ul>
+<li><a href="http://pivotal.github.io/jasmine/">Jasmine</a></li>
+<li><a href="http://visionmedia.github.io/mocha/">Mocha</a></li>
+<li><a href="http://karma-runner.github.io/">Karma</a> test runner</li>
+</ul>
+</li>
+<li><a href="http://phantomjs.org">PhantomJS</a></li>
+<li><a href="https://saucelabs.com">Sauce Labs</a></li>
+<li><a href="http://www.browserstack.com">BrowserStack</a></li>
+<li><a href="https://github.com/jquery/testswarm/wiki">TestSwarm</a></li>
+</ul>
+
+          </section>
+          <section><h2>We could go on…</h2>
+<p>But really, take a look at Dimi Navrotskyy&#39;s <br/>
+great list of <a href="https://github.com/dypsilon/frontend-dev-bookmarks">frontend dev links</a>.</p>
+
+          </section>
+        </section>
+        <section>
+          <section><h1>Essential Resources</h1>
+<ul>
+<li><a href="http://developers.whatwg.org">HTML: The Living Standard</a> at WHATWG<ul>
+<li>(it&#39;s readable. really!)</li>
+</ul>
+</li>
+<li><a href="http://caniuse.com">CanIUse.com</a><ul>
+<li>up-to-date browser support</li>
+</ul>
+</li>
+<li><a href="http://html5please.com">HTML5Please.com</a><ul>
+<li>advice and <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills">polyfills</a></li>
+</ul>
+</li>
+<li><a href="http://www.html5rocks.com/en/resources">HTML5 Rocks resources</a><ul>
+<li>community compilation of tools</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+          <section><h2>Demos &amp; the Edge</h2>
+<ul>
+<li><a href="http://slides.html5rocks.com">HTML5 Rocks Slides with Demos</a></li>
+<li><a href="http://www.html5rocks.com">HTML5 Rocks</a> for the cutting-edge</li>
+<li><a href="http://html5demos.com">HTML5 Demos</a> to see how it should work</li>
+<li><a href="http://modernizr.com/">Modernizr</a> for smart feature detection</li>
+<li><a href="http://beta.html5test.com/">HTML5Test</a> to see how your browser stacks up</li>
+</ul>
+
+          </section>
+          <section><h2>Books, Courses &amp; Collections</h2>
+<ul>
+<li><p>Books:</p>
+<ul>
+<li><a href="http://diveintohtml5.info/">Dive Into HTML5</a> — a bit dated, but still great</li>
+<li><a href="http://amzn.com/B003WJRW2U">Introducing HTML5</a> by Bruce Lawson and Remy Sharp</li>
+<li><a href="http://amzn.com/B0043D2E0E">HTML5: Up and Running</a> by Mark Pilgrim</li>
+</ul>
+</li>
+<li><p>Courses:</p>
+<ul>
+<li><a href="https://github.com/dypsilon/frontend-dev-bookmarks">Frontend Dev Bookmarks</a> @ free</li>
+<li><a href="http://www.teaching-materials.org/">Web Development Teaching Materials</a> @ free</li>
+<li><a href="https://www.udemy.com/collection/web-development-courses">Udemy web development courses</a> @ $49-$99+</li>
+<li><a href="http://www.lynda.com/Web-training-tutorials/88-0.html">Lynda&#39;s video courses</a> @ $25/month</li>
+</ul>
+</li>
+</ul>
+
+          </section>
+        </section>
+        <section><h2>Shane&#39;s 10K Foot</h2>
+<h1>HTML5 Platform</h1>
+<h2>Overview</h2>
+<p>I&#39;d be happy to talk tech with you over coffee.</p>
+<ul>
+<li>email: <a href="mailto:shane.holloway@ieee.org?Subject=HTML5%2010K%20Overview">shane.holloway@ieee.org</a></li>
+<li>phone: <a href="tel:+1-719-237-0682">(719) 237-0682</a></li>
+<li>skype: <a href="skype:shanewholloway?call">shanewholloway</a></li>
+</ul>
+
+        </section>
+      </div>
+    </div>
+    <script src="js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script><script type="text/javascript">
+(function() {
+  Reveal.initialize({
+    width: 960,
+    height: 600,
+    margin: 0.1,
+    minScale: 0.2,
+    maxScale: 4.0,
+    history: true,
+    rollingLinks: false,
+    transition: 'linear',
+    transitionSpeed: 'default',
+    backgroundTransition: 'default'
+  });
+
+  setTimeout(function() {
+    var sc;
+    (sc = document.createElement('script')).async = true;
+    sc.src = "//" + location.hostname + ":35729/livereload.js";
+    document.body.appendChild(sc);
+  });
+
+}).call(this);
+</script>
+  </body>
+</html>

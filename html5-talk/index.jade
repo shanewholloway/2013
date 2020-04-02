@@ -1,0 +1,65 @@
+!!! 5
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+
+    title HTML5 Overview
+
+    link(rel='stylesheet', href='css/reveal.min.css')
+    link(rel='stylesheet', href='css/print/pdf.css', media='print')
+    link(rel='stylesheet', href='css/fonts/fonts.css')
+    link(rel='stylesheet', href='css/night.css', id='theme')
+    link(rel='stylesheet', href='css/zenburn.css')
+    style.
+      iframe.demo {
+        display: block;
+        margin: 0 auto;
+        border: 0;
+        background: white;
+      }
+
+    //[if lt IE 9]
+      script(src="js/html5shiv.js")
+    script(src='js/classList.js')
+
+  body
+    .reveal
+      .slides
+        include parts/intro.jade
+        section
+          include parts/html5spec.jade
+        section
+          include parts/markup.jade
+        section
+          include parts/richMedia.jade
+        section
+          include parts/presentation.jade
+        section
+          include parts/jsApis.jade
+        section
+          include parts/strategy.jade
+        section
+          include parts/resources.jade
+        include parts/epilogue.jade
+
+    script(src='js/head.min.js')
+    script(src='js/reveal.min.js')
+    :coffeescript
+      Reveal.initialize
+        width: 960, height: 600,
+        margin: 0.1, minScale: 0.2, maxScale: 4.0,
+
+        history: true,
+
+        rollingLinks: false,
+        transition: 'linear', # default/cube/page/concave/zoom/linear/fade/none
+        transitionSpeed: 'default', # default/fast/slow
+        backgroundTransition: 'default', # default/linear
+
+      setTimeout ->
+        (sc = document.createElement 'script').async = true
+        sc.src = "//#{location.hostname}:35729/livereload.js"
+        document.body.appendChild sc
+        return
+

@@ -1,0 +1,121 @@
+section
+  :markdown
+    # JavaScript APIs
+    - DOM & CSSOM
+    - JSON, HTML & XML Parsing
+    - History & Navigation
+    - Storage & Offline
+    - Canvas & rendering
+    - Communications
+      - Security
+      - Cross-document
+      - RESTful & JSON
+      - Realtime
+    
+section
+  :markdown
+    ## Document Object Model
+    ### a.k.a. _the DOM_
+    - for HTML, SVG & CSS
+    - dataset
+    - classList
+    - events
+
+section
+  :markdown
+    ## Powerful APIs
+    - History API
+    - Geolocation
+    - Drag and Drop
+
+section
+  :markdown
+    ## Storage, client-side
+    - old: cookies
+    - [Web Storage][0]: local & session
+      - simple and [well supported][0b]
+    - [IndexedDB][1]
+      - and [WebSQL][2] based [polyfill][3]
+      - more complex
+    - [FileSystem][4] API
+      - not well supported
+
+    [0]: http://html5demos.com/storage
+    [0b]: http://caniuse.com/#feat=namevalue-storage
+    [1]: http://caniuse.com/#feat=indexeddb
+    [2]: http://caniuse.com/#feat=websql
+    [3]: https://github.com/axemclion/IndexedDBShim
+    [4]: http://caniuse.com/#search=filesystem
+
+section
+  :markdown
+    ## Canvas APIs
+    - `.fill()` and `.stroke()`
+    - `.beginPath()`
+      - `.lineTo()` `.arcTo()`
+      - `.closePath()`
+    - `.drawImage()`
+    - `.transform()` `.rotate()` `.scale()`
+    - `.clip()`
+
+section
+  :markdown
+    ## Video & Audio
+    - methods
+      - `.load()`
+      - `.pause()`
+      - `.play()`
+      - `.canPlayType()`
+    - events
+      - `loaded`, `playing`, `ended`, …
+      - `progress`, `timeupdate`, …
+      - `seeking`, `pause`, `volumechange`, …
+
+
+section
+  :markdown
+    ## Document Communcations
+    - postMessage
+      - `<iframe>`
+      - `window.open()`
+      - [web workers][ww]
+    - [Storage Events][se]
+
+    [se]: http://html5demos.com/storage-events
+    [ww]: http://www.html5rocks.com/en/tutorials/workers/basics/
+
+section
+  :markdown
+    ## RESTful Communcations
+    (REST: Representational State Transfer)
+    - AJAX, [XHR2][], JSON and [JSONP][]
+    - Security, [same-origin policy][sop] and [CORS]
+    - [DOMParser][domparser] for parsing XML or HTML
+      - [XMLSerializer][] to convert back to XHTML
+      - [XPath][] for selections and filtering
+    
+    <br/>
+    (More in our hands-on session)
+
+    [XHR2]: http://www.html5rocks.com/en/tutorials/file/xhr2/
+    [CORS]: http://www.html5rocks.com/en/tutorials/cors/
+    [sop]: http://en.wikipedia.org/wiki/Same_origin_policy
+    [JSONP]: http://en.wikipedia.org/wiki/JSONP
+    [DOMParser]: https://developer.mozilla.org/en-US/docs/Web/API/DOMParser
+    [XMLSerializer]: https://developer.mozilla.org/en-US/docs/XMLSerializer
+    [XPath]: https://developer.mozilla.org/en-US/docs/Using_XPath
+
+section
+  :markdown
+    ## Realtime Communcations
+    - [Server-Sent Events in Action][sse]
+    - [Web Sockets][0] & fallbacks
+      - [SockJS](http://sockjs.org) polyfill
+      - [Socket.io](http://socket.io/) realtime
+
+    <br/>
+    (More in our hands-on session)
+
+    [0]: https://developer.mozilla.org/en-US/docs/WebSockets
+    [sse]: http://tech.ebuddy.com/2013/06/25/server-sent-events-in-action/
+

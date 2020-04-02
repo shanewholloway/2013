@@ -1,0 +1,98 @@
+section
+  :markdown
+    # HTML5 Markup
+    *[summary of HTML5 differences][1]*
+
+    - New & Changed Elements & Attributes
+      - sectioning & structural
+      - improved semantics
+      - enhanced forms
+    - Obsolete Elements and Attributes
+      - CSS instead of presentational markup
+      - eliminate redundant & harmful elements
+
+    [1]: https://rawgithub.com/whatwg/html-differences/master/Overview.html#new-elements
+
+section
+  :markdown
+    ## Structure & Sectioning
+    - [`<main>`][1] to indicate the "real" content
+    - [`<header>`][2] for introducting sections
+    - [`<footer>`][3] for wrapping up sections
+    - [`<article>`][4] for stand alone units of content
+    - [`<section>`][5] for grouping of articles
+    - [`<aside>`][6] for tangents and sidetracks
+    - [`<nav>`][7] for collecting links
+
+    [1]: http://html5doctor.com/the-main-element/
+    [2]: http://html5doctor.com/the-header-element/
+    [3]: http://html5doctor.com/the-footer-element-update/
+    [4]: http://html5doctor.com/the-article-element/
+    [5]: http://html5doctor.com/the-section-element/
+    [6]: http://html5doctor.com/aside-revisited/
+    [7]: http://html5doctor.com/nav-element/
+
+section
+  :markdown
+    ## Structured Document
+    ```html
+    <!DOCTYPE html>
+    <head>
+        <meta charset='utf-8'>
+        <title>HTML5 Strutured
+    <body>
+        <header> … <nav> … </nav> … </header>
+        <aside>…</aside>
+        <main>
+            <section> … <aside> … </aside> … </section>
+            <article> … </article>
+            <section>
+                <article> … <aside> … </aside> </article>
+            </section>
+        </main>
+        <footer> … <nav> … </nav> … </footer>
+    ```
+
+section
+  :markdown
+    ## Figure Semantics
+    - [`<figure>`][1] to wrap one or more media items
+    - [`<figcaption>`][1] to describe what's in the figure
+
+    [1]: http://html5doctor.com/the-figure-figcaption-elements/
+
+section
+  :markdown
+    ## Other Elements
+    - `<time>`, `<wbr>`
+    - behavior: `<details>`, `<summary>`
+    - media: `<canvas>` `<audio>`, `<video>`, `<track>`, `<source>`
+    - language: `<bdi>`, `<ruby>`, `<rt>`, `<rp>`
+    - redefined: `<b>`, `<s>`, `<u>`, `<i>`, `<cite>`, `<dl>`, `<hr>`
+    - redefined: `<address>`, `<script>`, `<small>`, `<strong>`
+
+section
+  :markdown
+    ## Enhanced Forms
+    - behavior
+      - placeholder
+      - autofocus
+      - readonly
+      - validation
+
+    - `<input type=…>` 
+      - email, url, tel
+      - search
+      - number, range
+
+      - *warning: fragmented browser support*
+
+section
+  :markdown
+    ## New Forms Elements
+      - `<datalist>`
+      - `<output>`
+      - `<progress>`
+      - `<meter>`
+      - `<keygen>`
+

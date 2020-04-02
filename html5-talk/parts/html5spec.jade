@@ -1,0 +1,94 @@
+section
+  h1 What is HTML5?
+  ul
+    li a 
+      a(href='http://www.w3.org/TR/html5/') W3C
+      |  and 
+      a(href='http://developers.whatwg.org') WHATWG
+      |  specification
+    li a follow-on to HTML4 and XHTML1
+    li a markup syntax
+    li.fragment current behaviors, documented
+    li.fragment a standardized JavaScript API
+    li.fragment a simple DOCTYPE
+    li.fragment a backlash against…
+      ul
+        li.fragment XML &amp; SGML?
+        li.fragment Flash and Plugins?
+
+section
+  :markdown
+    ## (Forgiving) Parsing Algorithm
+
+    - inline support for SVG and MathML
+    - specified parse error handling
+      - e.g. `<b><i>some text</b></i>`
+    - all compliant browsers now <b>parse identically</b>
+    - => interoperable, compatible document trees
+
+section
+  :markdown
+    ## Standardized DOM Parse Tree
+
+    - `<html>`, `<head>`, and `<body>` are optional!
+
+    - "smart" auto-closing tags
+      - `<h1>`…, `<p>`, `<li>`, `<dt>`, `<dd>` 
+
+    - `<table>` implies `<tbody>`
+      - `<thead>`, `<tfoot>` auto-close
+      - `<tr>`, `<th>` and `<td>` auto-close
+
+    - **use with caution** — *like operator precidence*
+
+
+
+section
+  :markdown
+    ## Web Application APIs
+    - DOM, CSSOM, Timers and Events
+    - History & Navigation
+    - Storage & Offline support
+    - RESTful & Realtime Communications
+    - Focus, Editing, and Drag & Drop
+
+section
+  :markdown
+    ## New Markup
+    - new tags 
+    - new attributes
+    - … _**up next**_
+    - & rich media, _a bit later_
+
+section
+  :markdown
+    ## to get started…
+
+    ```html
+    <!DOCTYPE html>
+    <h1>Look, HTML5!
+    ```
+
+    yep, that's all you need
+
+  iframe(style='background: white; margin: 10px; padding: 10px',
+    src='data:text/html;base64,PCFET0NUWVBFIGh0bWw+CjxoMT5Mb29rLCBIVE1MNSEK')
+
+section
+  :markdown
+    ## to get started… in practice
+
+    ```html
+    <!DOCTYPE html>
+    <head>
+      <meta charset='utf-8'>
+      <title>HTML5 in Practice
+    <body>
+      <h1>Look, HTML5!
+    ```
+
+    because `charset` and `title` are important.
+
+    And yes, you may close your tags if you want.
+
+  small (You can even write so it parses as HTML5 <b>and</b> XHTML2…)

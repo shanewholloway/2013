@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('montserrat-bold-webfont.eot');
+  src: url('montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('montserrat-bold-webfont.woff') format('woff'),
+       url('montserrat-bold-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Bold-webfont.eot');
+  src: url('OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-Bold-webfont.woff') format('woff'),
+       url('OpenSans-Bold-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-BoldItalic-webfont.eot');
+  src: url('OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-BoldItalic-webfont.woff') format('woff'),
+       url('OpenSans-BoldItalic-webfont.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Italic-webfont.eot');
+  src: url('OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-Italic-webfont.woff') format('woff'),
+       url('OpenSans-Italic-webfont.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Regular-webfont.eot');
+  src: url('OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('OpenSans-Regular-webfont.woff') format('woff'),
+       url('OpenSans-Regular-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
